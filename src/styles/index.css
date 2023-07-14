@@ -124,6 +124,10 @@ nav .nav__wrapper .nav__content .nav__content__social .content__social__link-soc
   position: absolute;
   top: -90px;
   z-index: 4;
+  transition: transform 0.2s ease;
+}
+.swiper__scrolldown .swiper__scrolldown__icon:hover {
+  transform: perspective(500px) translateZ(100px);
 }
 
 :root {
@@ -218,6 +222,16 @@ nav .nav__wrapper .nav__content .nav__content__social .content__social__link-soc
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: linear-gradient(to right, #2C4058 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s;
+}
+.whatwhedo .whatwhedo__wrapper .whatwhedo__content .whatwhedo__content__designs__tradecenter .designs__tradecenter__rightside .tradecenter__rightside__btn:hover {
+  color: white;
+  background-position: left bottom;
 }
 .whatwhedo .whatwhedo__wrapper .whatwhedo__content .whatwhedo__content__designs__tradecenter .designs__tradecenter__rightside .designs__tradecenter__buttom {
   display: flex;
@@ -279,6 +293,16 @@ nav .nav__wrapper .nav__content .nav__content__social .content__social__link-soc
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: linear-gradient(to right, #2C4058 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s;
+}
+.whatwhedo .whatwhedo__wrapper .whatwhedo__content .whatwhedo__content__designs__commerce .designs__commerce__leftside .commerce__lefstide__btn:hover {
+  color: white;
+  background-position: left bottom;
 }
 .whatwhedo .whatwhedo__wrapper .whatwhedo__content .whatwhedo__content__designs__commerce .designs__commerce__leftside .designs__commerce__buttom {
   display: flex;
@@ -483,15 +507,186 @@ nav .nav__wrapper .nav__content .nav__content__social .content__social__link-soc
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #2C4058 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: bottom center;
+  transition: all 0.3s;
+}
+.gallery__content .gallery__content__btn:hover {
+  color: white;
+  background-position: top center;
 }
 
 .footer__content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  position: relative;
 }
 .footer__content #map {
-  width: 1600px;
+  width: 100%;
   height: 700px;
+}
+.footer__content .footer__content__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 30%;
+  width: 770px;
+  height: 415px;
+  background-color: #fff;
+  background-image: url(/src/images/footer/city.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.footer__content .footer__content__contact .content__contact .data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.footer__content .footer__content__contact .content__contact .info {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  margin-left: 10px;
+}
+.footer__content .footer__content__contact .content__contact__line {
+  margin-top: 60px;
+  width: 100px;
+  height: 1px;
+  background: #2C4058;
+  border: none;
+}
+.footer__content .footer__content__contact .content__contact__title {
+  margin-top: 30px;
+  color: #2C4058;
+  text-align: center;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer__content .footer__content__contact .content__container {
+  margin-top: 42px;
+  display: flex;
+  align-items: stretch;
+  gap: 54px;
+}
+.footer__content .footer__content__contact .content__container form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.footer__content .footer__content__contact .content__container form .info__name {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding-bottom: 14px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid rgba(44, 64, 88, 0.3); /* Example border color with opacity */
+  color: black; /* Set the desired color for the text */
+}
+.footer__content .footer__content__contact .content__container form .info__name:focus {
+  border-bottom: 1px solid rgb(44, 64, 88);
+}
+.footer__content .footer__content__contact .content__container form .info__name::placeholder {
+  color: rgba(44, 64, 88, 0.3);
+}
+.footer__content .footer__content__contact .content__container form .info__email {
+  width: 310px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding-bottom: 14px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid rgba(44, 64, 88, 0.3); /* Example border color with opacity */
+  color: black; /* Set the desired color for the text */
+}
+.footer__content .footer__content__contact .content__container form .info__email:focus {
+  border-bottom: 1px solid rgb(44, 64, 88);
+}
+.footer__content .footer__content__contact .content__container form .info__email::placeholder {
+  color: rgba(44, 64, 88, 0.3);
+}
+.footer__content .footer__content__contact .content__container form .info__btn {
+  margin-left: 175px;
+  width: 140px;
+  height: 50px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #2C4058;
+  background-color: transparent;
+  background-image: linear-gradient(to right, #2C4058 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s;
+}
+.footer__content .footer__content__contact .content__container form .info__btn i {
+  display: none;
+}
+.footer__content .footer__content__contact .content__container form .info__btn:hover {
+  color: white;
+  background-position: left bottom;
+}
+
+footer {
+  width: 100%;
+  background: center/cover url(/src/images/footer/background.png) no-repeat;
+}
+footer .footer__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+}
+footer .footer__wrapper .footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 369px;
+  margin-top: 203px;
+  margin-bottom: 233px;
+}
+footer .footer__wrapper .footer__content .footer__leftside .logo {
+  width: 241px;
+  height: 54px;
+  margin-bottom: 41px;
+}
+footer .footer__wrapper .footer__content .footer__leftside .copyright {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .footer__wrapper .footer__content .footer__rightside {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+footer .footer__wrapper .footer__content .footer__rightside .footer__socialmedia {
+  transition: transform 0.2s ease;
+}
+footer .footer__wrapper .footer__content .footer__rightside .footer__socialmedia:hover {
+  transform: perspective(500px) translateZ(100px);
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -155,6 +155,11 @@ nav{
         position: absolute;
         top: -90px;
         z-index: 4;
+        transition: transform 0.2s ease;
+
+        &:hover{
+            transform: perspective(500px) translateZ(100px);  
+        }
     }
 }
 
@@ -254,6 +259,18 @@ nav{
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                        cursor: pointer;
+                        background-color: transparent;
+                        background-image: linear-gradient(to right, #2C4058 50%, transparent 50%);
+                        background-size: 200% 100%;
+                        background-position: right bottom;
+                        transition: all 0.5s;
+
+                        &:hover{
+                            color: white;
+                            background-position: left bottom;
+                        }
+                        
                         
                     }
 
@@ -323,6 +340,17 @@ nav{
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                        cursor: pointer;
+                        background-color: transparent;
+                        background-image: linear-gradient(to right, #2C4058 50%, transparent 50%);
+                        background-size: 200% 100%;
+                        background-position: right bottom;
+                        transition: all 0.5s;
+
+                        &:hover{
+                            color: white;
+                            background-position: left bottom;
+                        }
                         
                     }
 
@@ -566,18 +594,229 @@ nav{
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;    
+        line-height: normal;
+        cursor: pointer;
+        background-color: transparent;
+        background-image: linear-gradient(to bottom, #2C4058 50%, transparent 50%);
+        background-size: 100% 200%;
+        background-position: bottom center;
+        transition: all 0.3s;
+        
+        &:hover{
+            color: white;
+            background-position: top center;
+        }
     }
 
 }
+
 
 .footer__content{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    position: relative;
+    
 
     #map {
-        width: 1600px;
+        width: 100%;
         height: 700px;
     }
+    
+    .footer__content__contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 30%;
+        width: 770px;
+        height: 415px;
+        background-color: #fff;
+        background-image: url(/src/images/footer/city.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        .content__contact{
+
+            .data{
+                display: flex;
+                align-items: center;
+                margin-bottom: 23px
+                
+            }
+
+            .info{
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; /* 155.556% */
+                margin-left: 10px;
+            }
+        }
+
+        .content__contact__line{
+            margin-top: 60px;
+            width: 100px;
+            height: 1px;
+            background: #2C4058;
+            border: none;
+        }
+
+        .content__contact__title{
+            margin-top: 30px;
+            color: #2C4058;
+            text-align: center;
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .content__container{
+            margin-top: 42px;
+            display: flex;
+            align-items: stretch;
+            gap: 54px;
+
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 26px;
+
+                .info__name {
+                    color: #000;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27px;
+                    padding-bottom: 14px;
+                    border: 0;
+                    outline: 0;
+                    background: transparent;
+                    border-bottom: 1px solid rgba(44, 64, 88, 0.3); /* Example border color with opacity */
+                    color: black; /* Set the desired color for the text */
+
+                    &:focus {
+                        border-bottom: 1px solid rgba(44, 64, 88, 1); 
+                    }
+
+                    &::placeholder {
+                        color: rgba(44, 64, 88, 0.3);
+                    }
+
+                }
+
+                .info__email {
+                    width: 310px;
+                    color: #000;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27px;
+                    padding-bottom: 14px;
+                    border: 0;
+                    outline: 0;
+                    background: transparent;
+                    border-bottom: 1px solid rgba(44, 64, 88, 0.3); /* Example border color with opacity */
+                    color: black; /* Set the desired color for the text */
+
+                    &:focus {
+                        border-bottom: 1px solid rgba(44, 64, 88, 1); 
+                    }
+
+                    &::placeholder {
+                        color: rgba(44, 64, 88, 0.3);
+                    }
+                }
+
+                .info__btn {
+                    margin-left: 175px;
+                    width: 140px;
+                    height: 50px;
+                    color: #000;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27px;
+                    cursor: pointer; 
+                    background-color: transparent;
+                    border: 1px solid #2C4058;
+                    background-color: transparent;
+                    background-image: linear-gradient(to right, #2C4058 50%, transparent 50%);
+                    background-size: 200% 100%;
+                    background-position: right bottom;
+                    transition: all 0.5s;
+
+                        i {
+                            display: none;
+                        }
+
+                        &:hover{
+                            color: white;
+                            background-position: left bottom;
+                        }
+                        
+                    
+                }
+            }
+            
+        }
+    } 
 
 }
+
+footer {
+    width: 100%;
+    background: center/cover url(/src/images/footer/background.png) no-repeat;
+
+    .footer__wrapper{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1600px;
+        
+
+        .footer__content{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+           align-items: stretch;
+            gap: 369px;
+            margin-top: 203px;
+            margin-bottom: 233px;
+
+            .footer__leftside{
+
+                .logo{
+                    width: 241px;
+                    height: 54px;
+                    margin-bottom: 41px;
+                }
+
+                .copyright{
+                    color: #FFF;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .footer__rightside{
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+
+                .footer__socialmedia{
+                    transition: transform 0.2s ease;
+                
+                    &:hover{
+                        transform: perspective(500px) translateZ(100px);
+                    } 
+                }
+            }
+
+        }
+    }
+}
+

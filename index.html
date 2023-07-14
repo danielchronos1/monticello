@@ -18,12 +18,12 @@
                 <li class="nav__content__item"><a class="nav__content__item-link" href="#herosection"><img class="ellipse__navitem" src="src/images/nav/ellipse.svg" alt="">ABOUT US</a></li>
                 <li class="nav__content__item"><a class="nav__content__item-link" href="#whatwhedo"><img class="ellipse__navitem" src="src/images/nav/ellipse.svg" alt="">PROJECTS</a></li>
                 <li class="nav__content__item"><a class="nav__content__item-link" href="#latestnews"><img class="ellipse__navitem" src="src/images/nav/ellipse.svg" alt="">NEWS</a></li>
-                <li class="nav__content__item"><a class="nav__content__item-link" href=""><img class="ellipse__navitem" src="src/images/nav/ellipse.svg" alt="">CONTACT</a></li>
+                <li class="nav__content__item"><a class="nav__content__item-link" href="#contact"><img class="ellipse__navitem" src="src/images/nav/ellipse.svg" alt="">CONTACT</a></li>
             </ul>
             <div class="nav__content__social">
-                <a class="content__social__link" href=""><img class="content__social__link-socialmedia" src="src/images/nav/button-facebook.svg" alt=""></a>
-                <a class="content__social__link" href=""><img class="content__social__link-socialmedia" src="src/images/nav/button-twitter.svg" alt=""></a>
-                <a class="content__social__link" href=""><img class="content__social__link-socialmedia" src="src/images/nav/button-instagram.svg" alt=""></a>
+                <a class="content__social__link" href="https://www.facebook.com/" target="_blank"><img class="content__social__link-socialmedia" src="src/images/nav/button-facebook.svg" alt=""></a>
+                <a class="content__social__link" href="https://twitter.com/" target="_blank"><img class="content__social__link-socialmedia" src="src/images/nav/button-twitter.svg" alt=""></a>
+                <a class="content__social__link" href="https://www.instagram.com/" target="_blank"><img class="content__social__link-socialmedia" src="src/images/nav/button-instagram.svg" alt=""></a>
             </div>
         </div>
     </div>
@@ -238,7 +238,7 @@
       </div>
     </div> 
 </section>
-<section class="gallery">
+<section class="gallery" id="gallery">
   <div class="gallery__content">
     <hr class="gallery__content__line">
     <h1 class="gallery__content__title">GALLERY</h1>
@@ -265,12 +265,61 @@
     <button class="gallery__content__btn" type="submit">SEE MORE</button>
   </div>
 </section>
-<section class="footer">
+<section class="footer" id="contact">
   <div class="footer__content">
     <div id="map"></div>
-
+    <div class="footer__content__contact">
+      <hr class="content__contact__line">
+      <h1 class="content__contact__title">GET IN TOUCH</h1>
+      <div class="content__container">
+      <div class="content__contact">
+        <div class="content__contact__location data">
+          <i class="fa-solid fa-location-dot" style="color: #7e5aff;"></i>
+          <p class="location__address info">91 Nolan Extensions Suite 670</p>
+        </div>
+        <div class="content__contact__phone data">
+          <i class="fa-solid fa-phone" style="color: #7e5aff;"></i>
+          <p class="phone__number info">+001 356-868-2454</p>
+        </div>
+        <div class="content__contact__email data">
+          <i class="fa-solid fa-inbox" style="color: #7e5aff;"></i>
+          <p class="email__data info">montichello@service.com</p>
+        </div>
+        <div class="content__contact__timework data">
+          <i class="fa-regular fa-clock" style="color: #7e5aff;"></i>
+          <p class="timework__interval info">From 07:05AM to 19:30PM</p>
+        </div>
+      </div>
+      <div class="contact__info">
+        <form id="myForm" action="" method="post">
+          <input id="nameInput" class="info__name" type="text" placeholder="Name">
+          <input id="emailInput" class="info__email" type="text" placeholder="Email">
+          <button class="info__btn" type="submit">
+            <span>SUBMIT</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__leftside">
+            <img class="logo" src="src/images/nav/logo.svg" alt="">
+            <p class="copyright">Copyrights © 2020 Montichello</p>
+          </div>
+          <div class="footer__rightside">
+            <a class="footer__social__link" href="https://www.facebook.com/" target="_blank"><img class="footer__socialmedia" src="src/images/nav/button-facebook.svg" alt=""></a>
+            <a class="footer__social__link" href="https://www.twitter.com/" target="_blank"><img class="footer__socialmedia" src="src/images/nav/button-twitter.svg" alt=""></a>
+            <a class="footer__social__link" href="https://www.instagram.com/" target="_blank"><img class="footer__socialmedia" src="src/images/nav/button-instagram.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </section>
+<script src="https://kit.fontawesome.com/f928b8ae07.js" crossorigin="anonymous"></script>
 <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
   ({key: "", v: "beta"});</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
@@ -280,7 +329,7 @@
     direction: "vertical",
     autoplay: {
         reverseDirection: true,
-        delay: 3000,
+        delay: 4000,
         disableOnInteraction: false,
      },
     pagination: {
