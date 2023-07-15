@@ -49,7 +49,6 @@ const beachFlagMarkerView = new google.maps.marker.AdvancedMarkerView({
   position: { lat: 40.678566188203696, lng: -73.89748768197039 },
   content: beachFlagImg,
   title: "A marker using a custom PNG Image",
-  center: position,
 });
 
   
